@@ -1,30 +1,94 @@
 body {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: black;
+  background-color: white;
   height: 200vh;
   position: relative;
 }
 
-body:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1;
-}
+    body:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-transition: .3s all ease;
+        transition: .3s all ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+    }
 
 body.offcanvas-menu:before {
   opacity: 1;
   z-index: 1002;
   visibility: visible;
 }
+
+.FormSearch {
+    position: absolute;
+    top: 50%;
+    right: 0; /* Ajustez la distance du bord droit selon vos besoins */
+    transform: translate(0, -50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid #09830b;
+    padding: 5px;
+}
+
+.Search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+#iconsearch {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #09830b;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+.FormSearch:hover,
+.FormSearch:valid {
+    width: 200px;
+    cursor: pointer;
+}
+
+    .FormSearch:hover .Search,
+    .FormSearch:valid .Search {
+        display: block;
+    }
+
+    .FormSearch:hover #iconsearch,
+    .FormSearch:valid #iconsearch {
+        background: #09830b;
+        color: white;
+    }
+
+
 
 a {
   -webkit-transition: .3s all ease;
@@ -484,4 +548,4 @@ a, a:hover {
     padding-bottom: 30px !important;
   }
 }
-/*# sourceMappingURL=style.css.map */
+

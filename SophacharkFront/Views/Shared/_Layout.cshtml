@@ -5,23 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SophacharkFront</title>
     @RenderSection("Style",required:false)
-    
-
-
-
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
     <link rel="stylesheet" href="fonts/icomoon/style.css" asp-append-version="true">
-
     <link rel="stylesheet" href="~/css/owl.carousel.min.css" asp-append-version="true">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="~/css/bootstrap.min.css" asp-append-version="true">
-
-    <!-- Style -->
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
+
 <body>
 
     <div class="site-mobile-menu site-navbar-target">
@@ -33,8 +25,6 @@
         <div class="site-mobile-menu-body"></div>
     </div>
 
-
-
     <header class="site-navbar site-navbar-target py-4" role="banner">
 
         <div class="container">
@@ -42,24 +32,43 @@
 
                 <div class="col-3">
                     <div class="site-logo">
-                        <a href="index.html" class="font-weight-bold text-white">Brand</a>
+                        <a href="index.html" class="font-weight-bold text-black">Brand</a>
                     </div>
                 </div>
 
                 <div class="col-9  text-right">
 
 
-                    <span class="d-inline-block d-lg-block"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-white"></span></a></span>
-
-
+                    <span class="d-inline-block d-lg-block"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
 
                     <nav class="site-navigation text-right ml-auto d-none d-lg-none" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                            <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                            <li><a href="about.html" class="nav-link">About</a></li>
-                            <li><a href="services.html" class="nav-link">Services</a></li>
-                            <li><a href="blog.html" class="nav-link">Blog</a></li>
-                            <li><a href="contact.html" class="nav-link">Contact</a></li>
+                            @* <li class="active"><a href="index.html" class="nav-link">Home</a></li> *@
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"> Home </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="CetegoryMedicament"> Cetegory Medicament</a>
+                            </li>
+                            <li><a href="" class="nav-link"> About Us</a></li>
+                            <li><a href="" class="nav-link"> Contact </a></li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Register"> Register </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login"> Login </a>
+                            </li>
+                         
+
+                            <li class="nav-item pt-5">                               
+                                <form action="" class="FormSearch">
+                                    <input type="search" required class="Search" placeholder="Search">
+                                    <i class="fa fa-search" id="iconsearch"></i>
+                                </form>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -67,16 +76,18 @@
 
             </div>
         </div>
-
     </header>
 
-    <div class="container">
+
+
+    
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
+    
 
-   
+
+
     
     <script src="~/js/jquery-3.3.1.min.js"></script>
     <script src="~/js/popper.min.js"></script>
@@ -85,10 +96,7 @@
     <script src="~/js/main.js"></script>
 
 
-
-
-
     @RenderSection("Scripts",required:false)
-    @await RenderSectionAsync("Scripts", required: false)
+    @* @await RenderSectionAsync("Scripts", required: false) *@
 </body>
 </html>
