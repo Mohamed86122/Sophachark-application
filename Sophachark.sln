@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front-end", "Front-end", "{F93FEFA0-76B1-4519-BFD7-0410489390AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SophacharkFront", "SophacharkFront\SophacharkFront.csproj", "{C96FAC61-900D-4F24-A73C-C92EDD45E3AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C96FAC61-900D-4F24-A73C-C92EDD45E3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96FAC61-900D-4F24-A73C-C92EDD45E3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96FAC61-900D-4F24-A73C-C92EDD45E3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96FAC61-900D-4F24-A73C-C92EDD45E3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C96FAC61-900D-4F24-A73C-C92EDD45E3AD} = {F93FEFA0-76B1-4519-BFD7-0410489390AE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FF0CC3C-1C10-4000-8AF0-1BC3866C337C}
+	EndGlobalSection
+EndGlobal
