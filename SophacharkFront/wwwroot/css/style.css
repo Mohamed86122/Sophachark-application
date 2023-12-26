@@ -549,3 +549,23 @@ a, a:hover {
   }
 }
 
+#demo
+{
+    padding-top : 100px ;
+}
+
+.carousel-caption
+{
+    margin-bottom : 15%;
+    margin-left : 20%;
+}
+
+.boutton {
+
+    border: 2px solid none;
+    padding: 10px;
+    border-radius: 20px;
+}
+.About{
+    margin-top : 5% ;
+}

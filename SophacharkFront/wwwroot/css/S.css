@@ -1,0 +1,213 @@
+﻿#register-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#register-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+    #register-container a {
+        text-decoration: none;
+    }
+
+#register-green-content {
+    background-color: #2AEA4F;
+    width: 400px;
+    height: 750px;
+    border-radius: 18px 0px 0px 18px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#register-vivid {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+    #register-vivid img {
+        width: 48px;
+        height: auto;
+    }
+
+    #register-vivid span {
+        padding-left: 5px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+#register-signin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    #register-signin h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    #register-signin p {
+        text-align: center;
+        width: 300px;
+        height: auto;
+        margin-top: -5px;
+        margin-bottom: 30px;
+    }
+
+#register-green-content .login-btn {
+    background-color: #FFFFFF;
+    border: 1px solid white;
+    border-radius: 11px;
+    color: #737373;
+    width: 160px;
+    height: 43px;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    line-height: 1em;
+}
+
+    #register-green-content .login-btn:hover {
+        color: #2AEA4F;
+        background-color: white;
+    }
+
+#register-grey-content {
+    width: 690px;
+    height: 750px;
+    background-color: #2A2A2A;
+    border-radius: 0px 18px 18px 0px;
+    text-align: center;
+    display: flex;
+}
+
+#register-grey-content-container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#register-grey-content .title {
+    color: #FFFFFF;
+    font-size: 62px;
+    font-weight: 500;
+    margin-top: -27px;
+    margin-bottom: 20px;
+}
+
+#google-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Sans-Serif;
+    cursor: pointer;
+}
+
+    #google-btn .outer {
+        background-color: #4295F5;
+        color: white;
+        border: none;
+        width: 265px;
+        height: 44px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #google-btn .outer:hover {
+            background-color: #2385f6;
+        }
+
+    #google-btn .inner {
+        background-color: white;
+        width: 46px;
+        height: 38px;
+        border-radius: 8px;
+        margin-left: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #google-btn .inner img {
+            width: 22px;
+            height: auto;
+        }
+
+    #google-btn .text {
+        color: white;
+        width: 100%;
+        font-weight: 400;
+        text-align: center;
+    }
+
+#register-grey-content .or-text {
+    color: #B6B6B6;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#register-grey-content input {
+    background-color: #484848;
+    color: #303030;
+    border: none;
+    width: 395px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 9px;
+    border-radius: 10px;
+    border-bottom: 2px solid #101010;
+}
+
+    #register-grey-content input::placeholder {
+        color: #afb4b9;
+    }
+
+#submit {
+    display: flex;
+    justify-content: center;
+}
+
+#register-grey-content .register-btn {
+    background-color: #2AEA4F;
+    color: white;
+    border: none;
+    border-radius: 11px;
+    width: 160px;
+    height: 43px;
+    font-size: 17px;
+    margin-right: 13px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px 0 rgb(42 234 79 / 50%);
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #register-grey-content .register-btn:hover {
+        background-color: #07d12f;
+    }

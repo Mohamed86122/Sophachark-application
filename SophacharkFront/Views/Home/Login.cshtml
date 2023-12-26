@@ -1,0 +1,51 @@
+﻿@section Title 
+{
+
+}
+
+@section Style 
+{
+    <link rel="stylesheet" href="~/css/styleslogin.css" />
+
+ 
+
+}
+<div class="container">
+    <div class="header">
+        <img src="/image/Sophachark.png" alt="Pharmacy Icon">
+        <h1><span style="color:rgb(27, 156, 130) ;">Welcome! </span> </h1>
+    </div>
+
+    <form action="login.php" method="post">
+        <h2><span style="color:rgb(27, 156, 130) ;">Login To Your Account ?</span></h2>
+        <input type="text" id="username" name="username" required placeholder="Username">
+
+        <div class="password-container">
+            <input type="password" id="password" name="password" required placeholder="Password">
+            <img src="/image/vis.png" alt="Show Password" onmousedown="showPassword()" onmouseup="hidePassword()" class="vis">
+        </div>
+
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <p><span style="color: rgb(27, 156, 130);">Vous n'avez pas de compte?</span> <a href="inscription.html">S'inscrire</a></p>
+
+</div>
+
+<script>
+    function showPassword() {
+        var passwordInput = document.getElementById("password");
+        var eyeIcon = document.querySelector(".password-container img");
+
+        passwordInput.type = "text";
+        eyeIcon.src = "/image/nonvis.png";
+    }
+
+    function hidePassword() {
+        var passwordInput = document.getElementById("password");
+        var eyeIcon = document.querySelector(".password-container img");
+
+        passwordInput.type = "password";
+        eyeIcon.src = "/image/vis.png";
+    }
+</script>

@@ -1,0 +1,54 @@
+﻿@section Style
+{
+    <link rel="stylesheet" href="~/css/S.css">
+
+  
+}
+
+@section Title 
+{
+    <title>Register page</title>
+}
+@section register 
+{
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+ 
+    <div id="register-wrapper">
+        <div id="register-container">
+            <div id="register-green-content">
+                <div id="register-Sophachark">
+                </div>
+                <div id="register-signin">
+                    <h1>Sign in to Sopha</h1>
+                    <p>If you already have an account you can login below.</p>
+                    <div class="break"></div>
+                    <a class="login-btn" href="login">Login</a>
+                </div>
+            </div>
+            <div id="register-grey-content">
+                <div id="register-grey-content-container">
+                    <h1 class="title">Create Account</h1>
+
+
+                    <div class="break"></div>
+                    <form method="post" action="register.php">
+                        <input placeholder="Name" name="name" type="text">
+                        <input placeholder="Username" name="username" type="text">
+                        <input placeholder="Email" name="email">
+                        <input placeholder="Password" name="password_1" type="password">
+                        <input placeholder="Confirm Password" name="password_2" type="password">
+                        <div class="break"></div>
+                        <div id="submit">
+                            <button class="register-btn" name="register_user" type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,125 @@
+body {
+    background-image: url('/image/backg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(249, 255, 255);
+    padding: 40px;
+    border-radius: 80px;
+    box-shadow: 10 0 100px rgba(3, 82, 66, 0.2);
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+    .header img {
+        width: 200px;
+        height: 200px;
+        margin-right: 10px;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #002f1e;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 95, 90, 0.5);
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 2.5px solid #005c58;
+    border-radius: 12px; /* Arrondir les coins */
+    box-sizing: border-box;
+}
+
+    input[type="password"] {
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 2.5px solid #005c58;
+        border-radius: 12px; /* Arrondir les coins */
+        min-width: 280px;
+        box-sizing: border-box;
+    }
+
+    input, input[type="password"] {
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+.vis {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    top: 29%;
+    right: -25px;
+    transform: translateY(-50%);
+}
+
+
+.password-container {
+    position: relative;
+}
+
+
+    .password-container button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        color: #096862;
+        cursor: pointer;
+    }
+
+        .password-container button:hover {
+            color: #0e997d;
+        }
+
+button {
+    background-color: #33a141;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+    button:hover {
+        background-color: #1b9c82;
+        transition: 0.5s ease;
+    }
+
+a {
+    color: #1b9c82;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }

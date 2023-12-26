@@ -1,15 +1,8 @@
-﻿@section Style {
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/css/stylehome.css" rel="stylesheet">
-
-
+﻿@section Title 
+{
+    <title>Homepage </title>
 }
-
-@section Scripts {
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-}
-
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+<div id="demo" class="carousel slide w-75 m-auto" data-bs-ride="carousel">
 
     <!-- Indicators/dots -->
     <div class="carousel-indicators">
@@ -21,13 +14,35 @@
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="~/images/1.png" alt="Los Angeles" class="d-block" style="width:100%">
+            <img src="~/images/Hanover.png" alt="Los Angeles" class="d-block" height="500px" width="350px">
+            <div class="carousel-caption">
+                <span style="color: black;">SOPHA CHARK</span>
+                <h3 style="color: black;">Société de logistique pharmaceutique</h3>
+                <div class="boutton">
+                    <button class="btn btn-success"> <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CategoryMedicament"> Category Medicament </a> </button>
+                </div>
+
+            </div>
         </div>
         <div class="carousel-item">
-            <img src="~/images/2.png" alt="Chicago" class="d-block" style="width:100%">
+            <img src="~/images/Hanover.png" alt="Chicago" class="d-block" height="500px" width="350px">
+            <div class="carousel-caption">
+                <span style="color: black;">La société pharmaceutique du Maghreb Ach-charki (SOPHACHARK S.A) est spécialisée dans la commercialisation de produits pharmaceutiques auprès des pharmacies agréées par le ministère de la Santé. </span>
+                <h3 style="color: black;">SOPHA CHARK</h3>
+                <div class="boutton">
+                    <button class="btn btn-success"> <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CategoryMedicament"> Category Medicament </a> </button>
+                </div>
+            </div>
         </div>
         <div class="carousel-item">
-            <img src="~/images/3.png" alt="New York" class="d-block" style="width:100%">
+            <img src="~/images/Hanover.png" alt="New York" class="d-block" height="500px" width="350px">
+            <div class="carousel-caption">
+                <span style="color: black;">SOPHACHARK est une société anonyme créée en 1984 avec un capital de 3 000 000 de dirhams. Elle est située dans la zone industrielle de la route de MAGHNIYA à OUJDA et emploie jusqu'à 50 personnes.</span>
+                <h3 style="color: black;">SOPHA CHARK</h3>
+                <div class="boutton">
+                    <button class="btn btn-success"> <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CategoryMedicament"> Category Medicament </a> </button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -40,7 +55,77 @@
     </button>
 </div>
 
-<div class="container-fluid mt-3">
-    <h3>Carousel Example</h3>
-    <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+<div id="AboutUs" class="text-center">
+    <div class="About w-75 m-auto">
+        <h1 class="mb-5 text-success"> <b> Sophachark </b> </h1>
+
+        <p>Bienvenue chez Sophachark, votre partenaire de confiance en logistique pharmaceutique. Nous sommes déterminés à révolutionner la distribution mondiale de produits pharmaceutiques en mettant l'accent sur l'intégrité, l'innovation et la qualité.</p>
+
+        <p>Notre mission est d'optimiser la chaîne d'approvisionnement pharmaceutique pour assurer la disponibilité rapide et sécurisée des produits essentiels, contribuant ainsi à la continuité des soins de santé. Nous priorisons la qualité, en respectant les normes de sécurité les plus élevées pour garantir l'intégrité des produits tout au long de la chaîne d'approvisionnement.</p>
+
+        <p>Nous utilisons des technologies avancées pour optimiser la visibilité, la traçabilité et la gestion des stocks, offrant à nos clients un contrôle total sur leurs opérations logistiques. Sophachark est votre partenaire stratégique dédié à comprendre vos besoins uniques, offrant des solutions personnalisées pour favoriser votre croissance à long terme.</p>
+
+        <p>Choisissez Sophachark pour une logistique pharmaceutique excellente, fluide et sécurisée. Nous sommes fiers de jouer un rôle essentiel dans la santé mondiale chaque jour.</p>
+
+    </div>
 </div>
+
+<article id="Contact">
+    <div class="container px-5 my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 rounded-3 shadow-lg">
+                    <div class="card-body p-4">
+                        <div class="text-center mb-5">
+                            <div class="h2 fw-light text-success"> <b> Contact Us </b> </div>
+                        </div>
+
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                                <label for="name">Name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                            </div>
+
+
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                                <label for="emailAddress">Email Address</label>
+                                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                            </div>
+
+
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                            </div>
+
+
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder text-success">Form submission successful!</div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Error sending message!</div>
+                            </div>
+
+
+                            <div class="d-grid w-25 m-auto">
+                                <button class="btn btn-success btn-lg disabled" id="submitButton" type="submit"> Send </button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>
